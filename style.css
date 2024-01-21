@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(12, 187, 245);
+  height: 10vh;
+}
+.logo {
+  color: white;
+  font-size: 18px;
+}
+.search > form {
+  border: 2px solid gray;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+}
+.search p {
+  color: white;
+  font-size: 18px;
+}
+.search > form > select {
+  height: 30px;
+  width: 70%;
+  border: none;
+  border-radius: 2px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  height: 50vh;
+}
+.post {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.header > .header-img img {
+  width: 100%;
+  height: 20vh;
+}
+.avi {
+  margin-top: 0;
+}
+.avi > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+  margin-left: 20px;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid salmon;
+  margin-left: 20px;
+  position: relative;
+  top: -50px;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.bio > .location img {
+  height: 20px;
+}
+.tweet-content {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  flex: 1;
+  max-width: 50vw;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  max-width: 50vw;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 12vw;
+  gap: 10px;
+  border: 2px dotted yellow;
+}
+.comment > .image > img {
+  width: 80px;
+  height: 9rem;
+  border-radius: 5px;
+}
+.comment-content > .top img {
+  max-height: 10px;
+}
+
+.comment-content {
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  height: 12vw;
+  width: 60rem;
+  font-size: 10px;
+}
+.comment-content > .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.comment-content > .body {
+  height: 60rem;
+  border-bottom: 1px solid black;
+}
+
+.tweet {
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 12vw;
+  gap: 10px;
+}
+.tweet > img {
+  width: 80px;
+  height: 85%;
+  border-radius: 5px;
+}
+.tweet > .text {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  width: 90%;
+}
+.tweet .tweet-content {
+  font-size: 12px;
+  border: 2px solid aqua;
+  width: 100%;
+  height: 80%;
+}
+.text > .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.text img {
+  max-height: 15px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  max-height: 30px;
+  font-size: 10px;
+  gap: 10px;
+}
+.icons img {
+  max-height: 10px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
