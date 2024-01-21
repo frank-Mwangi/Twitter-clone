@@ -12,8 +12,6 @@ async function fetchUsers() {
     if (storedUserData) {
       userData = JSON.parse(storedUserData);
       populateSelectOptions(userData);
-      //   populateBio(userData[0]);
-      //   fetchPosts(1);
     } else {
       const response = await fetch(
         "https://jsonplaceholder.typicode.com/users/"
@@ -21,8 +19,6 @@ async function fetchUsers() {
       userData = await response.json();
       localStorage.setItem("userData", JSON.stringify(userData));
       populateSelectOptions(userData);
-      //   populateBio(userData[0]);
-      //   await fetchPosts(1);
     }
 
     if (storedSelectedUserId) {
@@ -167,12 +163,6 @@ const populateComments = (comments) => {
     reply.querySelector(".body").textContent = comment.body;
   }
 };
-
-// fetchComments().then((comments) => {
-//     populateComments(comments)
-// }).catch(error) => {
-//     console.log(`Error fetching comments; ${error}`)
-// }
 
 window.addEventListener("DOMContentLoaded", async () => {
   await fetchUsers();

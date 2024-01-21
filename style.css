@@ -4,6 +4,7 @@
 .body {
   margin: 0;
   padding: 0;
+
   font-family: "Inter", sans-serif;
 }
 nav {
@@ -20,7 +21,7 @@ nav {
   font-size: 18px;
 }
 .search > form {
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   width: 20vw;
   display: flex;
   flex-direction: row;
@@ -45,8 +46,10 @@ nav {
 .header {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 50vh;
+
+  background-color: rgb(247, 247, 247);
 }
 .post {
   display: flex;
@@ -72,7 +75,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
   margin-left: 20px;
   position: relative;
   top: -50px;
@@ -105,16 +108,21 @@ nav {
   gap: 15px;
   max-width: 50vw;
 }
+@media screen and (max-width: 720px) {
+  .right {
+    display: none;
+  }
+}
 .comment {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 12vw;
   gap: 10px;
-  border: 2px dotted yellow;
+  /* border: 2px dotted yellow; */
 }
 .comment > .image > img {
-  width: 80px;
+  width: 100px;
   height: 9rem;
   border-radius: 5px;
 }
@@ -123,12 +131,12 @@ nav {
 }
 
 .comment-content {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   display: flex;
   flex-direction: column;
   height: 12vw;
   width: 60rem;
-  font-size: 10px;
+  font-size: 12px;
 }
 .comment-content > .top {
   display: flex;
@@ -138,11 +146,11 @@ nav {
 }
 .comment-content > .body {
   height: 60rem;
-  border-bottom: 1px solid black;
+  border-bottom: 0.1px solid black;
 }
 
 .tweet {
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -150,7 +158,7 @@ nav {
   gap: 10px;
 }
 .tweet > img {
-  width: 80px;
+  width: 100px;
   height: 85%;
   border-radius: 5px;
 }
@@ -161,8 +169,8 @@ nav {
   width: 90%;
 }
 .tweet .tweet-content {
-  font-size: 12px;
-  border: 2px solid aqua;
+  font-size: 15px;
+  /* border: 2px solid aqua; */
   width: 100%;
   height: 80%;
 }
@@ -181,11 +189,11 @@ nav {
   display: flex;
   flex-direction: row;
   max-height: 30px;
-  font-size: 10px;
+  font-size: 12px;
   gap: 10px;
 }
 .icons img {
-  max-height: 10px;
+  max-height: 20px;
 }
 .icon {
   display: flex;
